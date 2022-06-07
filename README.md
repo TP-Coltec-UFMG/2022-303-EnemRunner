@@ -2,7 +2,7 @@
 
 Desenvolvedores: Arthur Cordeiro Ferreira Souza, Éric Catarina Parreiras, Gabriel Benvindo Begnami e Gabriel Machado Violante;
 
-- Características Gerais: Pixelado, Rogue-Like, 2D, Somente eixo Y;
+- Características Gerais: Pixelado, Runner, 2D;
 
 - Plataforma: Mobile;
 
@@ -11,14 +11,14 @@ Desenvolvedores: Arthur Cordeiro Ferreira Souza, Éric Catarina Parreiras, Gabri
 - Objetivo: Conscientizar os usuários acerca da necessidade da melhora dos nossos espaços públicos, a fim de torná-los mais acessíveis a todas as pessoas, assim como, o jogo tem como intuiuto agregar mais possibilidades de imersão;
 
 ## Ideia Do Jogo
-
-O ENEM RUNNER através da coneção de três pessoas: Enzo, Valentina e Iraci, todos com algum tipo de deficiência, irão apresentar o cenário caótico das ruas brasileiras por parte do governo e da própria sociedade com a população que depende da acessibilidade.
+<p align="justify">
+O ENEM RUNNER através da coneção de três pessoas: Enzo, Valentina e Iraci, todos com algum tipo de deficiência, irão viver no cenário caótico das ruas brasileiras por parte do governo e da própria sociedade com a população que depende da acessibilidade.</p>
 
 <p align="center">
   <br>
-  <img height="250" margin-right="10" src="/ReposAssets/usersdefault.png">
+  
   <img height="250" src="/ReposAssets/Iraci.png">
-  <img height="250" src="/ReposAssets/usersdefault.png">
+ 
 </p>
 <p align="center">
   Iraci
@@ -31,8 +31,8 @@ O ENEM RUNNER através da coneção de três pessoas: Enzo, Valentina e Iraci, t
 ## Telas Do Jogo
 
 ### Menu Principal (Layout Inteligente)
-
-A ideia do ENEM RUNNER é ser COMPLETAMENTE acéssivel para deficientes visuais. Nesse sentido, suas telas suas telas apresentam poucos botões, sendo que os inseridos estão dispostos em locais estratégicos, isto é, apenas as extremidades de uma tela ou em sua parte central, que são facilmente identificadas através do toque e por dicas auditivas.
+<p align="justify">
+A ideia do ENEM RUNNER é ser COMPLETAMENTE acéssivel para deficientes visuais. Nesse sentido, suas telas apresentam poucos botões, sendo que os inseridos estão dispostos em locais estratégicos, isto é, apenas nas extremidades da tela ou em sua parte central, que são facilmente identificadas através do toque e por dicas auditivas, haverá opções de ação.</p>
 
 <p align="center">
   <br>
@@ -42,8 +42,8 @@ A ideia do ENEM RUNNER é ser COMPLETAMENTE acéssivel para deficientes visuais.
 ### Elementos adicionais de acessibilidade
 
 #### Butão Universal de Tutorial
-
-Além do LAYOUT ACESSIVO, o ENEM RUNNER irá contar com dicas, orientações e representações sonoras ao usuário, tanto durante e fora da ação do game. Sob essa ótica, haverá um butão universal, isto é, presente em todas as telas no canto superior direito, que ao ser clicado informará faladamente todas as instruções da cena que o usuário está inserido.
+<p align="justify">
+Além do LAYOUT ACESSIVO, o ENEM RUNNER irá contar com dicas, orientações e representações sonoras ao usuário, tanto durante e fora da ação do game. Sob essa ótica, haverá um butão universal, isto é, presente em todas as telas no canto superior direito, que ao ser clicado informará faladamente todas as instruções da cena que o usuário está inserido.</p>
 
 <p align="center">
   <img height="250" src="/ReposAssets/UniversalButton.png">
@@ -52,9 +52,9 @@ Além do LAYOUT ACESSIVO, o ENEM RUNNER irá contar com dicas, orientações e r
 ___
 
 #### Butão de Configurações 
-
+<p align="justify">
 O butão de configurações, presente no canto superior esquerdo da tela tem o intuito de apresentar as opções de configurações ao usuário, como opções de áudio e imagem.
-
+</p>
 <p align="center">
   <img height="250" src="/ReposAssets/Config.png">
 </p>
@@ -68,12 +68,21 @@ ___
   <img src="/ReposAssets/Tela_De_Play.png">
 </p>
 
+<p align="justify">
+  Essa tela, seguindo nossa proposta acessível, apresenta em seu canto superior direito o butão universal, que apresentamos anteriormente, responsável em auxiliar oralmente o usuário. No superior esquerdo há a opção de configurações que ao ser clicada levará a uma tela com as características editáveis do jogo, tal cena será melhor descrita no próximo tópico. Ao usuário clicar em qualquer parte central da tela, o jogo em si se iniciará. Há também a parte inferior, com os ícones de seta, um a esquerda e outro a direita, responsáveis por caminhar entre a lista de personagens[3] = { "Enzo" , "Valentina" , "Iraci" }.
+</p>
+
+
 
 
 #### Tela das Configurações
 
 <p align="center">
   <img src="/ReposAssets/Tela_de_Config.png">
+</p>
+
+<p align="justify">
+ A tela de configurações também segue o layout acessível desenvolvido pelo grupo. Então, como mostrado na imagem, cada cena das configurações contém apenas uma configuração a ser alterada, para que o usuário a utilize tranquilamente, no canto inferior da tela há os ícones de seta, um a esquerda e outro a direita que serão responsáveis por circular entre as opções de configurações atribuídas ao jogo, e cada uma delas ocupará uma página. Além disso, como dito anteriormente, o canto superior direito contém o butão universal que dará as dicas da página de configuração ativa pelo jogador e no canto superior esqquerdo o botão para retornar a página de menu principal.
 </p>
 
 ___
