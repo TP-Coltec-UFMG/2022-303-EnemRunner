@@ -17,6 +17,6 @@ public class MovimentoVertical : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        rb.position += new Vector2(0, SpeedManager.GlobalSpeed *Time.fixedDeltaTime *-1);
+        rb.position += new Vector2(0, SpeedManager.GlobalSpeed *Time.fixedDeltaTime * Screen.height *-1);
     }
 }
