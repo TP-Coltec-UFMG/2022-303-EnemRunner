@@ -6,11 +6,11 @@ public class SpeedManager : MonoBehaviour
 {
 
     [SerializeField]
-    private float globalSpeed = 1.0f;
+    private float globalSpeed = 10.0f;
     [SerializeField]
     private Material rua;
     [SerializeField]
-    private float RealObjectsSpeedMultiplier=10.0f;
+    
 
     public static float GlobalSpeed;
 
@@ -28,7 +28,7 @@ public class SpeedManager : MonoBehaviour
     {
         
             rua.SetFloat("_Speed", globalSpeed);
-            GlobalSpeed = globalSpeed * RealObjectsSpeedMultiplier;
+            GlobalSpeed = globalSpeed;
         
     }
 }
