@@ -18,7 +18,7 @@ public class Scroller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       if (rt.transform.position.y < 1330){
+       if (rt.transform.position.y < 1390){
         rt.transform.position = new Vector2(posXInicial,posYInicial);
 
        }
