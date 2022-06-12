@@ -15,11 +15,11 @@ public class SpeedManager : MonoBehaviour
     
 
     
-    void Update()
+    void FixedUpdate()
     {
             rua.SetFloat("_Speed", globalSpeed);
-            GlobalSpeed = globalSpeed;
-            Debug.Log(Screen.height);
+            GlobalSpeed = globalSpeed * Screen.height;
+            
             
     }
 }
