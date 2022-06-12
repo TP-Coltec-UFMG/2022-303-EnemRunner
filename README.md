@@ -1,5 +1,5 @@
 <p align="center">
- <img src="Assets/Assets/Images/Title.png" height="300">
+ <img src="Assets/Assets/Images/Title.png" height="280">
 </p>
 
 <p align="center">
@@ -82,7 +82,6 @@ O botão de configurações, presente no canto superior esquerdo da tela tem o i
   <img height="250" src="/ReposAssets/Config.png">
 </p>
 
-
 ___
 
 #### Tela de PLAY
@@ -95,8 +94,7 @@ ___
   Essa tela, seguindo nossa proposta acessível, apresenta em seu canto superior direito o botão universal, que apresentamos anteriormente, responsável em auxiliar oralmente o usuário. No superior esquerdo há a opção de configurações que ao ser clicada levará a uma tela com as características editáveis do jogo, tal cena será melhor descrita no próximo tópico. Quando o usuário clicar em qualquer parte central da tela, o jogo iniciará. Há também a parte inferior, com os ícones de seta, um a esquerda e outro a direita, responsáveis por caminhar entre a lista de personagens[3] = { "Enzo" , "Valentina" , "Iraci" }.
 </p>
 
-
-
+___
 
 #### Tela das Configurações
 
@@ -105,8 +103,23 @@ ___
 </p>
 
 <p align="justify">
- A tela de configurações também segue o layout acessível desenvolvido pelo grupo. Então, como mostrado na imagem, cada cena das configurações contém apenas uma configuração a ser alterada, para que o usuário a utilize tranquilamente, no canto inferior da tela há os ícones de seta, um a esquerda e outro a direita que serão responsáveis por circular entre as opções de configurações atribuídas ao jogo, e cada uma delas ocupará uma página. 
+ A tela de configurações também segue o layout acessível desenvolvido pelo grupo. Então, como mostrado na imagem, cada cena das configurações contém apenas uma configuração a ser alterada, para que o usuário a utilize tranquilamente, no canto inferior da tela há os ícones de seta, um a esquerda e outro a direita que serão responsáveis por circular entre as opções de configurações atribuídas ao jogo, e cada uma delas ocupará uma página. Posteriormente, adicionaremos outras páginas de opções, como linguagem, áudio e cores. 
 Além disso, como dito anteriormente, o canto superior direito contém o botão universal que dará as dicas da página de configuração ativa pelo jogador e no canto superior esqquerdo o botão para retornar a página de menu principal. E, baseando-se no exemplo mostrado acima, na parte central a esquerda o usuário diminui o volume e a direita aumenta o volume, ambos emitirão sons ao serem clicados.
+</p>
+
+___
+
+#### Tela do Jogo
+
+<br>
+<p align="center">
+ <img src="ReposAssets/EnemRunner-V1.gif" alt="My Project GIF" height="650">
+</p>
+
+<p align="justify">
+Esse é um esboço da tela principal do jogo, nessa parte o usuário conseguirá deslizar os dedos para a direita ou esquerda a fim de desviar dos obstáculos, que nesse exemplo, são apenas as árvores, mas haverá carros, buracos, ladrões, entre outros. Além disso, a tela será diferente para cada personagem, isto é, existirão diferentes níveis de imersão. Haverá a tela completamente escura, orientada apenas pelo som, a tela mostrada acima, que possuirá os sons e as imagens, e a tela com um campo de visão reduizo para a personagem, ou seja, o usuário irá escutar o obstáculo e a direção pela qual ele está vindo e irá aparecer na tela apenas quando estiver muito perto de colidir com ele.
+ 
+Posteriormente, ao colidir com algum obstáculo, um som e uma mensagem será emitida orientando que aquela rodada acabou e que para continuar basta clicar em qualquer lugar da tela. Ademais, haverá um butão de fácil acesso para pausar a gameplay, o que é extremamente necessário. Lembrando que, como foi dito anteriormente, todas as orientações das diferentes telas do jogo estarão disponíveis em formato de áudio.
 </p>
 
 ___
