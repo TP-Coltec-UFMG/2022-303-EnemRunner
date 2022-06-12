@@ -1,12 +1,15 @@
 # ENEM RUNNER !!!
 
-<br>
+<p align="left" font-size="20">
+  <b>Status atual do jogo</b>
+</p>
+
 <p align="center">
  <img src="ReposAssets/EnemRunner-V1.gif" alt="My Project GIF" height="500">
 </p>
 <br>
 
-Desenvolvedores: Arthur Cordeiro Ferreira Souza, Éric Catarina Parreiras, Gabriel Benvindo Begnami e Gabriel Machado Violante;
+<b>Desenvolvedores:</b> Arthur Cordeiro Ferreira Souza, Éric Catarina Parreiras, Gabriel Benvindo Begnami e Gabriel Machado Violante;
 
 - Características Gerais: Pixelado, Runner, 2D;
 
