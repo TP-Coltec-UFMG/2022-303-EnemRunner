@@ -21,7 +21,7 @@
 
 ## Ideia Do Jogo
 <p align="justify">
-Em Enem Runner você poderá escolher três personagens: Enzo, Valentina e Iraci, todos com algum tipo de deficiência. Eles irão confrontar o cenário caótico das ruas brasileiras, que possuem vários empecilhos em sua acessibilidade.  </p>
+Em Enem Runner você poderá escolher três personagens: Enzo, Valentina e Iraci, todos com algum tipo de deficiência. Eles irão confrontar o cenário caótico das ruas brasileiras, que possuem vários empecilhos em sua acessibilidade.</p>
  
 <p align="center">
   <br>
@@ -36,6 +36,15 @@ Em Enem Runner você poderá escolher três personagens: Enzo, Valentina e Iraci
   OBS: OUTRAS PIXEL ARTS ESTÃO EM CONSTRUÇÃO (CENAS DOS PRÓXIMOS CAPÍTULOS)
 </p>
 
+## Mecânica Do Jogo
+<p align="justify">
+Enem Runner será feito sob um importante conceito, o de Blind Runner: game design de uma corrida infinita acessível à
+cultura com deficiência visual. A mecânica do jogo consistirá na capacidade de Iraci, um dos personagens apresentados, em se orientar através dos sons. Quando um obstáculo como por exemplo: uma árvore ou um carro vier em sua direção, ele será capaz de ouvir o objeto se aproximando, e consequentemente se desviar. Tais obstáculos virão de forma aleatória e gradativa, dessa forma, o jogo ficará mais rápido e mais difícil ao passar do tempo. </p>
+
+<p align="center">
+  <br>
+  <img height="550" src="/ReposAssets/Exemplo_mecanica_do_jogo.png">
+</p>
 
 ## Telas Do Jogo
 
