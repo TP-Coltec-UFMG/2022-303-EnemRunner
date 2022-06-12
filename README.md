@@ -14,7 +14,7 @@
 
 <br>
 
-<b>Desenvolvedores:</b>Arthur Cordeiro Ferreira Souza, Éric Catarina Parreiras, Gabriel Benvindo Begnami e Gabriel Machado Violante;
+<b>Desenvolvedores:</b> Arthur Cordeiro Ferreira Souza, Éric Catarina Parreiras, Gabriel Benvindo Begnami e Gabriel Machado Violante;
 
 - Características Gerais: Pixelado, Runner, 2D;
 
