@@ -1,5 +1,11 @@
 # ENEM RUNNER !!!
 
+<br>
+<p align="center">
+ <img src="ReposAssets/EnemRunner-V1.gif" alt="My Project GIF" height="500">
+</p>
+<br>
+
 Desenvolvedores: Arthur Cordeiro Ferreira Souza, Éric Catarina Parreiras, Gabriel Benvindo Begnami e Gabriel Machado Violante;
 
 - Características Gerais: Pixelado, Runner, 2D;
@@ -13,7 +19,7 @@ Desenvolvedores: Arthur Cordeiro Ferreira Souza, Éric Catarina Parreiras, Gabri
 ## Ideia Do Jogo
 <p align="justify">
 Em Enem Runner você poderá escolher três personagens: Enzo, Valentina e Iraci, todos com algum tipo de deficiência. Eles irão confrontar o cenário caótico das ruas brasileiras, que possuem vários empecilhos em sua acessibilidade.  </p>
-
+ 
 <p align="center">
   <br>
   
@@ -86,9 +92,6 @@ ___
 Além disso, como dito anteriormente, o canto superior direito contém o botão universal que dará as dicas da página de configuração ativa pelo jogador e no canto superior esqquerdo o botão para retornar a página de menu principal. E, baseando-se no exemplo mostrado acima, na parte central a esquerda o usuário diminui o volume e a direita aumenta o volume, ambos emitirão sons ao serem clicados.
 </p>
 
-<p align="center">
-  <img src="/ReposAssets/EnemRunner-V1.gif" alt="My Project GIF" height="500">
-</p>
 ___
 
 
