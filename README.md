@@ -86,6 +86,9 @@ ___
 Além disso, como dito anteriormente, o canto superior direito contém o botão universal que dará as dicas da página de configuração ativa pelo jogador e no canto superior esqquerdo o botão para retornar a página de menu principal. E, baseando-se no exemplo mostrado acima, na parte central a esquerda o usuário diminui o volume e a direita aumenta o volume, ambos emitirão sons ao serem clicados.
 </p>
 
+<p align="center">
+  <img src="/ReposAssets/EnemRunner-V1.gif" alt="My Project GIF" height="500">
+</p>
 ___
 
 
