@@ -104,6 +104,7 @@ ___
 
 <p align="justify">
  A tela de configurações também segue o layout acessível desenvolvido pelo grupo. Então, como mostrado na imagem, cada cena das configurações contém apenas uma configuração a ser alterada, para que o usuário a utilize tranquilamente, no canto inferior da tela há os ícones de seta, um a esquerda e outro a direita que serão responsáveis por circular entre as opções de configurações atribuídas ao jogo, e cada uma delas ocupará uma página. Posteriormente, adicionaremos outras páginas de opções, como linguagem, áudio e cores. 
+ 
 Além disso, como dito anteriormente, o canto superior direito contém o botão universal que dará as dicas da página de configuração ativa pelo jogador e no canto superior esqquerdo o botão para retornar a página de menu principal. E, baseando-se no exemplo mostrado acima, na parte central a esquerda o usuário diminui o volume e a direita aumenta o volume, ambos emitirão sons ao serem clicados.
 </p>
 
