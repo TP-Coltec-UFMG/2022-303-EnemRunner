@@ -1,12 +1,15 @@
-# ENEM RUNNER !!!
-
-<p align="left" font-size="20">
-  <b>Status atual do jogo</b>
+<p align="center">
+ <img src="Assets/Assets/Images/Title.png" height="300">
 </p>
 
 <p align="center">
- <img src="ReposAssets/EnemRunner-V1.gif" alt="My Project GIF" height="500">
+ <img src="ReposAssets/EnemRunner-V1.gif" alt="My Project GIF" height="700">
 </p>
+
+<p align="center">
+<img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
+</p>
+
 <br>
 
 <b>Desenvolvedores:</b> Arthur Cordeiro Ferreira Souza, Éric Catarina Parreiras, Gabriel Benvindo Begnami e Gabriel Machado Violante;
