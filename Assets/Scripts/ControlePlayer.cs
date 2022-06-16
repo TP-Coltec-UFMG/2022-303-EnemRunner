@@ -1,31 +1,53 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class ControlePlayer : MonoBehaviour
 {
 
     private float playerY = Screen.height*2/10;
     private float posicaoColuna = 2;
-    private bool direcao;
+    
     [SerializeField]
     private GameObject Colunas;
     
     private float colunaUmX;
     private float colunaDoisX;
     private float colunaTresX;
+    
 
    
     private PosicaoDasColunas TresColunas;
     private RectTransform rt;
 
-    void Start()
-    {
-        rt = GetComponent<RectTransform>();
-        rt.transform.position = new Vector2(rt.transform.position.x, playerY);
-        SalvaPosicoesDasColunas();
+    public void OnMovimento(InputAction.CallbackContext ctx){
+        if (ctx.performed){
+            float direcao;
+            direcao = ctx.ReadValue<float>();
+            if (direcao < 0 ){
+                MoveEsquerda();
+            }
+            if(direcao > 0){
+                MoveDireita();
+            }
+            MovimentoHorizontal();
+            
+            
+        }
+        
     }
 
+    private void MoveEsquerda(){
+        posicaoColuna--;
+            posicaoColuna = Mathf.Max(posicaoColuna,1);
+
+
+    }
+    private void MoveDireita(){
+            posicaoColuna++;
+            posicaoColuna = Mathf.Min(posicaoColuna,3);
+    }
     private void SalvaPosicoesDasColunas()
     {
         TresColunas = Colunas.GetComponent<PosicaoDasColunas>();
@@ -35,22 +57,22 @@ public class ControlePlayer : MonoBehaviour
         colunaTresX = TresColunas.colunaTresX;
     }
 
-
-    void Update()
+    void Start()
     {
-        if (Input.GetKeyDown(KeyCode.LeftArrow )){
-            posicaoColuna--;
-            posicaoColuna = Mathf.Max(posicaoColuna,1);
-        }   
-        else if (Input.GetKeyDown(KeyCode.RightArrow )){
-            posicaoColuna++;
-            posicaoColuna = Mathf.Min(posicaoColuna,3);
-        }
+        rt = GetComponent<RectTransform>();
+        rt.transform.position = new Vector2(rt.transform.position.x, playerY);
+        SalvaPosicoesDasColunas();
+    }
+
+    
+
+
+    void MovimentoHorizontal()
+    {
+        
+    
         
         
-
-
-
         if(posicaoColuna == 1){
             rt.transform.position = new Vector2(colunaUmX,rt.transform.position.y);
         }
