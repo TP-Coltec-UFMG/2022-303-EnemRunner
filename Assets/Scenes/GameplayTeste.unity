@@ -273,7 +273,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 428031006}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32ff53a9b9127ea48a6c8aa64ef0c754, type: 3}
+  m_Script: {fileID: 11500000, guid: 3cbb9d3374250b24cb61f01959ea02f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cooldown: 1
@@ -541,7 +541,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e454c2712a3c3e4db72d60c4567b1bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  globalSpeed: 1
+  globalSpeedCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 5
+      value: 0.5
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   rua: {fileID: 2100000, guid: 2f30092cb2bd6a748b7e92c89a5fa76d, type: 2}
 --- !u!4 &1472779602
 Transform:

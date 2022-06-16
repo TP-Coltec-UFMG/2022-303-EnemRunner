@@ -6,20 +6,24 @@ public class SpeedManager : MonoBehaviour
 {
 
     [SerializeField]
-    private float globalSpeed = 1.0f;
-    
+    private float globalSpeed = 0.6f;
+
     [SerializeField]
     public static float GlobalSpeed;
     [SerializeField]
     private Material rua;
+   
     
 
-    
-    void FixedUpdate()
+
+    void Update()
     {
-            rua.SetFloat("_Speed", globalSpeed);
-            GlobalSpeed = globalSpeed * Screen.height;
-            
-            
+
+
+        GlobalSpeed = globalSpeed * Screen.height;
+        rua.SetFloat("_Speed", globalSpeed);
+
+        
+        
     }
 }

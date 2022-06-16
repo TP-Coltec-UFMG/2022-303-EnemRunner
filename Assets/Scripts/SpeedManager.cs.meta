@@ -5,7 +5,7 @@ MonoImporter:
   serializedVersion: 2
   defaultReferences:
   - rua: {fileID: 2100000, guid: 2f30092cb2bd6a748b7e92c89a5fa76d, type: 2}
-  executionOrder: 0
+  executionOrder: -20
   icon: {instanceID: 0}
   userData: 
   assetBundleName: 

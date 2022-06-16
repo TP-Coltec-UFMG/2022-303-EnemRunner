@@ -6,47 +6,53 @@ using UnityEngine.InputSystem;
 public class ControlePlayer : MonoBehaviour
 {
 
-    private float playerY = Screen.height*2/10;
+    private float playerY = Screen.height * 2 / 10;
     private float posicaoColuna = 2;
-    
+
     [SerializeField]
     private GameObject Colunas;
-    
+
     private float colunaUmX;
     private float colunaDoisX;
     private float colunaTresX;
-    
 
-   
+
+
     private PosicaoDasColunas TresColunas;
     private RectTransform rt;
 
-    public void OnMovimento(InputAction.CallbackContext ctx){
-        if (ctx.performed){
+    public void OnMovimento(InputAction.CallbackContext ctx)
+    {
+        if (ctx.performed)
+        {
             float direcao;
             direcao = ctx.ReadValue<float>();
-            if (direcao < 0 ){
+            if (direcao < 0)
+            {
                 MoveEsquerda();
             }
-            if(direcao > 0){
+            if (direcao > 0)
+            {
                 MoveDireita();
             }
             MovimentoHorizontal();
-            
-            
+
+
         }
-        
+
     }
 
-    private void MoveEsquerda(){
+    private void MoveEsquerda()
+    {
         posicaoColuna--;
-            posicaoColuna = Mathf.Max(posicaoColuna,1);
+        posicaoColuna = Mathf.Max(posicaoColuna, 1);
 
 
     }
-    private void MoveDireita(){
-            posicaoColuna++;
-            posicaoColuna = Mathf.Min(posicaoColuna,3);
+    private void MoveDireita()
+    {
+        posicaoColuna++;
+        posicaoColuna = Mathf.Min(posicaoColuna, 3);
     }
     private void SalvaPosicoesDasColunas()
     {
@@ -64,24 +70,23 @@ public class ControlePlayer : MonoBehaviour
         SalvaPosicoesDasColunas();
     }
 
-    
+
 
 
     void MovimentoHorizontal()
     {
-        
-    
-        
-        
-        if(posicaoColuna == 1){
-            rt.transform.position = new Vector2(colunaUmX,rt.transform.position.y);
+        if (posicaoColuna == 1)
+        {
+            rt.transform.position = new Vector2(colunaUmX, rt.transform.position.y);
         }
-        if(posicaoColuna == 2){
-            rt.transform.position = new Vector2(colunaDoisX,rt.transform.position.y);
+        if (posicaoColuna == 2)
+        {
+            rt.transform.position = new Vector2(colunaDoisX, rt.transform.position.y);
         }
-        if(posicaoColuna == 3){
-            rt.transform.position = new Vector2(colunaTresX,rt.transform.position.y);
+        if (posicaoColuna == 3)
+        {
+            rt.transform.position = new Vector2(colunaTresX, rt.transform.position.y);
         }
-        
+
     }
 }
