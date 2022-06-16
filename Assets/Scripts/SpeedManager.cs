@@ -13,6 +13,8 @@ public class SpeedManager : MonoBehaviour
     [SerializeField]
     private Material rua;
     
+    [SerializeField]
+    private AnimationCurve speedCurve;
     
 
 
@@ -21,7 +23,7 @@ public class SpeedManager : MonoBehaviour
         
         
         
-
+        globalSpeed = speedCurve.Evaluate(Time.time);
         GlobalSpeed = globalSpeed * Screen.height;
         rua.SetFloat("_Speed", globalSpeed);
 

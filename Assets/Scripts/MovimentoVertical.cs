@@ -6,7 +6,7 @@ public class MovimentoVertical : MonoBehaviour
 {
     private Rigidbody2D rb;
     
-    
+   
    
     
     void Start()
@@ -14,7 +14,7 @@ public class MovimentoVertical : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
        

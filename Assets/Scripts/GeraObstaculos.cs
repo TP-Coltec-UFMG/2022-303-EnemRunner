@@ -63,6 +63,7 @@ public class GeraObstaculos : MonoBehaviour
             }
 
             GameObject instanciaDaArvore = Instantiate(ObjetoAlvo, new Vector3(colunaRandom, Screen.height, 0), Quaternion.identity, Pai);
+            Destroy(instanciaDaArvore, 2.5f);
             timer = 0;
 
         }
