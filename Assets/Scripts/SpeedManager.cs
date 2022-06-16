@@ -12,13 +12,15 @@ public class SpeedManager : MonoBehaviour
     public static float GlobalSpeed;
     [SerializeField]
     private Material rua;
-   
+    
     
 
 
     void Update()
     {
-
+        
+        
+        
 
         GlobalSpeed = globalSpeed * Screen.height;
         rua.SetFloat("_Speed", globalSpeed);

@@ -6,7 +6,7 @@ public class MovimentoVertical : MonoBehaviour
 {
     private Rigidbody2D rb;
     
-    [SerializeField]
+    
    
     
     void Start()
@@ -17,6 +17,7 @@ public class MovimentoVertical : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rb.position += new Vector2(0, SpeedManager.GlobalSpeed *Time.deltaTime *-1);
+       
+        rb.velocity = new Vector2(0, SpeedManager.GlobalSpeed*-1);
     }
 }
