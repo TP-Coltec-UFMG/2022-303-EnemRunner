@@ -11,29 +11,55 @@ public class RuaScroller : MonoBehaviour
     [SerializeField] private GameObject ruaPrincipal;
     [SerializeField] private Transform Pai;
     private Vector2 posicaoInicialDaCopiaDaRua;
-
-    private void setaPosicaoInicialDaCopiaDaRua()
-    {
-        posicaoInicialDaCopiaDaRua = new Vector2(Screen.width / 2, Screen.height * 1.5f);
-    }
     
     private Vector2 posicaoInicialDaRuaPrincipal;
     private GameObject instanciaDaRuaGO;
 
-    void Start()
+    private float meioDaTelaX;
+    private float topoDaTela;
+    private float fimDaTelaY;
+    private Vector2 topoDaTelaCentral;
+    private void setaPosicaoInicialDaCopiaDaRua()
     {
-        setaPosicaoInicialDaCopiaDaRua();
-        instanciaDaRuaGO = Instantiate(ruaGameObject, Pai);
-        instanciaDaRuaGO.transform.position = new Vector2(Screen.width / 2, Screen.height * 1.5f);
-        posicaoInicialDaRuaPrincipal = ruaPrincipal.transform.position;
+        posicaoInicialDaCopiaDaRua = topoDaTelaCentral;
     }
 
+    private void geraCopiaDaRua()
+    {
+        instanciaDaRuaGO = Instantiate(ruaGameObject, Pai);
+        instanciaDaRuaGO.transform.position = topoDaTelaCentral;
+    }
+
+    private void inicializaVariaveisPosicaoMeioFundoETopoDaTela()
+    {
+        meioDaTelaX = Screen.width / 2;
+        topoDaTela = Screen.height * 1.5f;
+        topoDaTelaCentral = new Vector2(meioDaTelaX, topoDaTela);
+        fimDaTelaY = Screen.height / 2f;
+    }
+
+    private bool testaSeRuaChegouAoFimDaTela()
+    {
+        return instanciaDaRuaGO.transform.position.y < fimDaTelaY;
+    }
+
+    private void resetaPosicaoDasRuas()
+    {
+        instanciaDaRuaGO.transform.position = posicaoInicialDaCopiaDaRua;
+        ruaPrincipal.transform.position = posicaoInicialDaRuaPrincipal;
+    }
+    void Start()
+    {
+        inicializaVariaveisPosicaoMeioFundoETopoDaTela();
+        setaPosicaoInicialDaCopiaDaRua();
+        geraCopiaDaRua();
+        posicaoInicialDaRuaPrincipal = ruaPrincipal.transform.position;
+    }
     void Update()
     {
-        if (instanciaDaRuaGO.transform.position.y < Screen.height / 2f)
+        if (testaSeRuaChegouAoFimDaTela())
         {
-            instanciaDaRuaGO.transform.position = posicaoInicialDaCopiaDaRua;
-            ruaPrincipal.transform.position = posicaoInicialDaRuaPrincipal;
+            resetaPosicaoDasRuas();
         }
     }
 }
