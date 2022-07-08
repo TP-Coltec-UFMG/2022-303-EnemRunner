@@ -19,18 +19,19 @@ public class RuaScroller : MonoBehaviour
     private float topoDaTela;
     private float fimDaTelaY;
     private Vector2 topoDaTelaCentral;
-    private void setaPosicaoInicialDaCopiaDaRua()
+    private void SetarPosicaoInicialDasRuas()
     {
         posicaoInicialDaCopiaDaRua = topoDaTelaCentral;
+        posicaoInicialDaRuaPrincipal = ruaPrincipal.transform.position;
     }
 
-    private void geraCopiaDaRua()
+    private void GerarCopiaDaRua()
     {
         instanciaDaRuaGO = Instantiate(ruaGameObject, Pai);
         instanciaDaRuaGO.transform.position = topoDaTelaCentral;
     }
 
-    private void inicializaVariaveisPosicaoMeioFundoETopoDaTela()
+    private void InicializarVariaveisPosicaoMeioFundoETopoDaTela()
     {
         meioDaTelaX = Screen.width / 2;
         topoDaTela = Screen.height * 1.5f;
@@ -38,28 +39,24 @@ public class RuaScroller : MonoBehaviour
         fimDaTelaY = Screen.height / 2f;
     }
 
-    private bool testaSeRuaChegouAoFimDaTela()
+    private bool SeRuaChegouAoFimDaTela()
     {
         return instanciaDaRuaGO.transform.position.y < fimDaTelaY;
     }
 
-    private void resetaPosicaoDasRuas()
+    private void ResetarPosicaoDasRuas()
     {
         instanciaDaRuaGO.transform.position = posicaoInicialDaCopiaDaRua;
         ruaPrincipal.transform.position = posicaoInicialDaRuaPrincipal;
     }
     void Start()
     {
-        inicializaVariaveisPosicaoMeioFundoETopoDaTela();
-        setaPosicaoInicialDaCopiaDaRua();
-        geraCopiaDaRua();
-        posicaoInicialDaRuaPrincipal = ruaPrincipal.transform.position;
+        InicializarVariaveisPosicaoMeioFundoETopoDaTela();
+        SetarPosicaoInicialDasRuas();
+        GerarCopiaDaRua();
     }
     void Update()
     {
-        if (testaSeRuaChegouAoFimDaTela())
-        {
-            resetaPosicaoDasRuas();
-        }
+        if (SeRuaChegouAoFimDaTela()) ResetarPosicaoDasRuas();
     }
 }
