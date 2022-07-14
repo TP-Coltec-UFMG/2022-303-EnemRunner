@@ -22,8 +22,6 @@ public class JogarDeNovo_OuMenu : MonoBehaviour
     {
         jogador = GameObject.FindObjectOfType<ControlePlayer>();
     }
-
-
     
     void Update()
     {
