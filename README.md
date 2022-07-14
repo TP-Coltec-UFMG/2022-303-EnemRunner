@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
- <img src="ReposAssets/EnemRunner-V1.gif" alt="My Project GIF" height="650">
+ <img src="ReposAssets/ClipEnemRunner14_07gif.gif" alt="My Project GIF" height="650">
 </p>
 
 <br>
