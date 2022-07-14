@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,13 +7,14 @@ using UnityEngine.InputSystem;
 public class ControlePlayer : MonoBehaviour
 {
 
+    private ManagerDeSons soundManager;
     private float playerY = Screen.height * 2 / 10;
     private float posicaoColuna = 2;
 
-    [SerializeField]
-    private GameObject Colunas;
+    
+    private PosicaoDasColunas Colunas;
 
-    private enum colunaAtual
+    public enum colunaAtual
     {
         colunaUm,
         colunaDois,
@@ -53,7 +55,7 @@ public class ControlePlayer : MonoBehaviour
         colunaDoisX = TresColunas.colunaDoisX;
         colunaTresX = TresColunas.colunaTresX;
     }
-    void MovimentoHorizontal()
+    private void MovimentoHorizontal()
     {
         if (posicaoColuna == 1)
         {
@@ -73,8 +75,23 @@ public class ControlePlayer : MonoBehaviour
 
     }
 
+    public colunaAtual RetornaColunaAtualPlayer()
+    {
+        return playerColunaAtual;
+    }
+
+    private void OnCollisionEnter2D (Collision2D obstaculoColidido)
+    {
+        Time.timeScale = 0;
+        soundManager.TocaSomImpacto();
+        soundManager.ParaMusicaBackground();
+        
+    }
+
     void Start()
     {
+        Colunas = GameObject.FindObjectOfType<PosicaoDasColunas>();
+        soundManager = GameObject.FindObjectOfType<ManagerDeSons>();
         playerColunaAtual = colunaAtual.colunaDois;
         rt = GetComponent<RectTransform>();
         rt.transform.position = new Vector2(rt.transform.position.x, playerY);

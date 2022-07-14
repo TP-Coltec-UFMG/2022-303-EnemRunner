@@ -13,12 +13,12 @@ public class GeraObstaculos : MonoBehaviour
     [SerializeField]
     private Transform Pai;
 
-    [SerializeField]
-     private GameObject Colunas;
     
-    private float colunaUmX;
-    private float colunaDoisX;
-    private float colunaTresX;
+     private PosicaoDasColunas Colunas;
+    
+    public float colunaUmX;
+    public float colunaDoisX;
+    public float colunaTresX;
 
     private PosicaoDasColunas TresColunas;
 
@@ -37,6 +37,7 @@ public class GeraObstaculos : MonoBehaviour
 
     void Start()
     {
+        Colunas = GameObject.FindObjectOfType<PosicaoDasColunas>();
         SalvaPosicoesDasColunas();
 
     }
@@ -63,6 +64,7 @@ public class GeraObstaculos : MonoBehaviour
             }
 
             GameObject instanciaDaArvore = Instantiate(ObjetoAlvo, new Vector3(colunaRandom, Screen.height, 0), Quaternion.identity, Pai);
+            
             Destroy(instanciaDaArvore, 2.5f);
             timer = 0;
 
