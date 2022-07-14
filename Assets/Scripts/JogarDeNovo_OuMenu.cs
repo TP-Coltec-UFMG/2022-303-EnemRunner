@@ -12,6 +12,7 @@ public class JogarDeNovo_OuMenu : MonoBehaviour
     public void CarregaMenuInicial()
     {
         SceneManager.LoadScene(0);
+        Time.timeScale = 1;
     }
     public void CarregaTelaGameOver()
     {
