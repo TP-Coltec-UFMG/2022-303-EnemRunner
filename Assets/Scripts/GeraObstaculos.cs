@@ -1,20 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class GeraObstaculos : MonoBehaviour
 {
+    #region Variáveis
+    
     private float timer = 0;
     [SerializeField]
     private float cooldown = 3f;
 
     [SerializeField]
     private GameObject ObjetoAlvo;
-    [SerializeField]
-    private Transform Pai;
-
+    [FormerlySerializedAs("Pai")] [SerializeField]
+    private Transform TransformDoPai;
     
-     private PosicaoDasColunas Colunas;
+    private PosicaoDasColunas Colunas;
     
     public float colunaUmX;
     public float colunaDoisX;
@@ -23,51 +25,78 @@ public class GeraObstaculos : MonoBehaviour
     private PosicaoDasColunas TresColunas;
 
     private float colunaRandom;
-
     
+    #endregion
+
+    #region Métodos
 
     private void SalvaPosicoesDasColunas()
     {
-        TresColunas = Colunas.GetComponent<PosicaoDasColunas>();
-
         colunaUmX = TresColunas.colunaUmX;
         colunaDoisX = TresColunas.colunaDoisX;
         colunaTresX = TresColunas.colunaTresX;
     }
 
-    void Start()
+    private void ObtemReferenciaDosObjetos()
     {
-        Colunas = GameObject.FindObjectOfType<PosicaoDasColunas>();
-        SalvaPosicoesDasColunas();
-
+        Colunas = FindObjectOfType<PosicaoDasColunas>();
+        TresColunas = Colunas.GetComponent<PosicaoDasColunas>();
     }
 
+    private void SelecionaColunaAleatoria()
+    {
+        colunaRandom = Random.Range(0f, 1f);
+        if (colunaRandom < 0.33)
+        {
+            colunaRandom = colunaUmX;
+        }
+        else if (colunaRandom < 0.66)
+        {
+            colunaRandom = colunaDoisX;
+        }
+        else
+        {
+            colunaRandom = colunaTresX;
+        }
+    }
 
+    private void ResetaTemporizador()
+    {
+        timer = 0;
+    }
+
+    private void Temporizador()
+    {
+        timer += Time.fixedDeltaTime;
+    }
+    private void GeraObjetoAtual()
+    {
+        GameObject instanciaDoObjetoAtual = Instantiate(ObjetoAlvo, new Vector3(colunaRandom, Screen.height + 200, 0), Quaternion.identity, TransformDoPai);
+        Destroy(instanciaDoObjetoAtual, 2f);
+    }
+
+    private bool CooldownAcabou()
+    {
+        return timer > cooldown;
+    }
+
+    #endregion
+    
+    
+    void Start()
+    {
+        ObtemReferenciaDosObjetos();
+        SalvaPosicoesDasColunas();
+    }
+    
     void FixedUpdate()
     {
-
-        timer += Time.fixedDeltaTime;
-        if (timer > cooldown)
+        Temporizador();
+        if (CooldownAcabou())
         {
-            colunaRandom = Random.Range(0f, 1f);
-            if (colunaRandom < 0.33)
-            {
-                colunaRandom = colunaUmX;
-            }
-            else if (colunaRandom < 0.66)
-            {
-                colunaRandom = colunaDoisX;
-            }
-            else
-            {
-                colunaRandom = colunaTresX;
-            }
-
-            GameObject instanciaDaArvore = Instantiate(ObjetoAlvo, new Vector3(colunaRandom, Screen.height + 200, 0), Quaternion.identity, Pai);
-            
-            Destroy(instanciaDaArvore, 2.5f);
-            timer = 0;
-
+            SelecionaColunaAleatoria();
+            GeraObjetoAtual();
+            ResetaTemporizador();
         }
     }
 }
