@@ -5,8 +5,8 @@ using UnityEngine;
 public class ColisaoObstaculo : MonoBehaviour
 {
     private ControlePlayer posicaoPlayer;
-    private ControlePlayer.colunaAtual colunaAtualPlayer;
-    private ControlePlayer.colunaAtual colunaAtualDoObstaculo;
+    private ControlePlayer.ColunaAtual colunaAtualPlayer;
+    private ControlePlayer.ColunaAtual colunaAtualDoObstaculo;
     private GeraObstaculos GeradorDeObstaculos;
 
     
