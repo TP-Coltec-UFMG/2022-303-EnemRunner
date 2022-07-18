@@ -4,20 +4,23 @@ using UnityEngine;
 
 public class MovimentoVertical : MonoBehaviour
 {
-    private Rigidbody2D rb;
-    
-   
-   
-    
-    void Start()
+    private Rigidbody2D rigidBodyObjetoAtual;
+
+    private void AtribuiRigidBody()
     {
-        rb = GetComponent<Rigidbody2D>();
+        rigidBodyObjetoAtual = GetComponent<Rigidbody2D>();
     }
 
-    
+    private void DeslocaObjetoParaBaixo()
+    {
+        rigidBodyObjetoAtual.velocity = new Vector2(0, SpeedManager.GlobalSpeed*-1);
+    }
+    void Start()
+    {
+        AtribuiRigidBody();
+    }
     void Update()
     {
-       
-        rb.velocity = new Vector2(0, SpeedManager.GlobalSpeed*-1);
+        DeslocaObjetoParaBaixo();
     }
 }
