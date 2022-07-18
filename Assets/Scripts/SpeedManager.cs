@@ -16,18 +16,10 @@ public class SpeedManager : MonoBehaviour
     [SerializeField]
     private AnimationCurve speedCurve;
     
-
-
     void Update()
     {
-        
-        
-        
         globalSpeed = speedCurve.Evaluate(Time.time);
         GlobalSpeed = globalSpeed * Screen.height;
         rua.SetFloat("_Speed", globalSpeed);
-
-        
-        
     }
 }

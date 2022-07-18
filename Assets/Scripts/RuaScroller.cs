@@ -9,7 +9,7 @@ public class RuaScroller : MonoBehaviour
     private GameObject ruaGameObject;
 
     [SerializeField] private GameObject ruaPrincipal;
-    [SerializeField] private Transform Pai;
+    [FormerlySerializedAs("Pai")] [SerializeField] private Transform TransformDoPai;
     private Vector2 posicaoInicialDaCopiaDaRua;
     
     private Vector2 posicaoInicialDaRuaPrincipal;
@@ -27,7 +27,7 @@ public class RuaScroller : MonoBehaviour
 
     private void GerarCopiaDaRua()
     {
-        instanciaDaRuaGO = Instantiate(ruaGameObject, Pai);
+        instanciaDaRuaGO = Instantiate(ruaGameObject, TransformDoPai);
         instanciaDaRuaGO.transform.position = topoDaTelaCentral;
     }
 
