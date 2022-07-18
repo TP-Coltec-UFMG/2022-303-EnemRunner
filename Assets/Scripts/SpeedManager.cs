@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,11 +16,31 @@ public class SpeedManager : MonoBehaviour
     
     [SerializeField]
     private AnimationCurve speedCurve;
-    
-    void Update()
+
+    private void DefineVelocidadeGeralBaseadoNoGrafico()
     {
         globalSpeed = speedCurve.Evaluate(Time.time);
+    }
+
+    private void DefineVelocidadeGeral()
+    {
         GlobalSpeed = globalSpeed * Screen.height;
+    }
+
+    private void AjustaVelocidadeDoShaderRua()
+    {
         rua.SetFloat("_Speed", globalSpeed);
+    }
+
+    private void Start()
+    {
+        
+    }
+
+    void Update()
+    {
+        DefineVelocidadeGeralBaseadoNoGrafico();
+        DefineVelocidadeGeral();
+        AjustaVelocidadeDoShaderRua();
     }
 }
