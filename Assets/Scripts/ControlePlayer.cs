@@ -34,9 +34,8 @@ public class ControlePlayer : MonoBehaviour
     private Transform _transform;
 
     private ManagerDeSons soundManager;
-    #endregion
-
     
+    #endregion
     
     #region Métodos Públicos
     public ColunaAtual RetornaColunaAtualPlayer()
@@ -61,8 +60,6 @@ public class ControlePlayer : MonoBehaviour
     }
     #endregion
     
-    
-    
     void Start()
     {
         ObtemReferenciasDosObjetos();
@@ -71,8 +68,6 @@ public class ControlePlayer : MonoBehaviour
         SalvaPosicoesDasColunas();
     }
 
-    
-    
     #region Métodos Privados
 
     private void MoveEsquerda()

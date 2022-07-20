@@ -49,6 +49,7 @@ public class RuaScroller : MonoBehaviour
         instanciaDaRuaGO.transform.position = posicaoInicialDaCopiaDaRua;
         ruaPrincipal.transform.position = posicaoInicialDaRuaPrincipal;
     }
+    
     void Start()
     {
         InicializarVariaveisPosicaoMeioFundoETopoDaTela();
