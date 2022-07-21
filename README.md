@@ -26,20 +26,20 @@
 
 ## Ideia Do Jogo
 <p align="justify">
-Em Enem Runner você poderá escolher três personagens: Enzo, Valentina e Iraci, todos com algum tipo de deficiência. Eles irão confrontar o cenário caótico das ruas brasileiras, que possuem vários empecilhos em sua acessibilidade.</p>
+Em Enem Runner você poderá escolher três personagens: Iraci, Enzo e Valentina, todos com algum tipo de deficiência. Eles irão confrontar o cenário caótico das ruas brasileiras, que possuem vários empecilhos em sua acessibilidade.</p>
  
 <p align="center">
   <br>
-  
-  <img height="250" src="/ReposAssets/Iraci.png">
- 
+  <img height="250" align="left" src="/ReposAssets/IracirSprite.png">
+  <img height="180" align="center" src="/ReposAssets/Iraci.png">
+  <img height="250" align="right" src="/ReposAssets/ValentinaSprite.png">
+  <br>
+  <br>
+  <br>
+  <br>
 </p>
-<p align="center">
-  Iraci
-</p>
-<p align="center">
-  OBS: OUTRAS PIXEL ARTS ESTÃO EM CONSTRUÇÃO (CENAS DOS PRÓXIMOS CAPÍTULOS)
-</p>
+
+
 
 ## Mecânica Do Jogo
 <p align="justify">
