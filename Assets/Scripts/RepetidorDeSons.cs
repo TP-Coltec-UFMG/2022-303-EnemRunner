@@ -10,7 +10,6 @@ public class RepetidorDeSons : MonoBehaviour
 
     private void Start()
     {
-        somFolhas.Play();
         
     }
 

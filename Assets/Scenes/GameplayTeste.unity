@@ -385,7 +385,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ruaGameObject: {fileID: 513776179779296902, guid: fcadcb2668532d84d85c0ccc939f5ff8, type: 3}
   ruaPrincipal: {fileID: 1607564275}
-  Pai: {fileID: 48439282}
+  TransformDoPai: {fileID: 48439282}
 --- !u!1 &428031006
 GameObject:
   m_ObjectHideFlags: 0
@@ -435,9 +435,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cbb9d3374250b24cb61f01959ea02f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldown: 0.8
+  cooldown: 2.5
   ObjetoAlvo: {fileID: 2038795889104857182, guid: 6cb926d00da9a8b49b45be4a68e8d9cf, type: 3}
-  Pai: {fileID: 428031007}
+  TransformDoPai: {fileID: 428031007}
   colunaUmX: 0
   colunaDoisX: 0
   colunaTresX: 0
@@ -456,7 +456,6 @@ GameObject:
   m_Component:
   - component: {fileID: 866592698}
   - component: {fileID: 866592697}
-  - component: {fileID: 866592696}
   - component: {fileID: 866592699}
   m_Layer: 0
   m_Name: Main Camera
@@ -465,14 +464,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &866592696
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 866592695}
-  m_Enabled: 1
 --- !u!20 &866592697
 Camera:
   m_ObjectHideFlags: 0
@@ -621,6 +612,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb0c0fc3a54a591bebc35a82a5b0ed2b, type: 3}
+--- !u!1 &1046341749 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6495398651263465783, guid: bb550c09d8c1acb8ca5daaa7cb7aa34d, type: 3}
+  m_PrefabInstance: {fileID: 28636907}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1319112108
 GameObject:
   m_ObjectHideFlags: 0
@@ -724,7 +720,7 @@ MonoBehaviour:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0.5
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -733,7 +729,7 @@ MonoBehaviour:
       outWeight: 0
     - serializedVersion: 3
       time: 60
-      value: 1.8
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -887,7 +883,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 3cf4dc61ea972189391906048168aa74, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.6
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -931,7 +927,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -1108,8 +1104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 188bdae0052a67d508ee54d4205d4b75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tickEcolocalizacao: {fileID: 1530890939}
-  cooldown: 0.5
+  somFolhas: {fileID: 0}
 --- !u!1001 &1550968625
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1428,3 +1423,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6495398651263465782, guid: bb550c09d8c1acb8ca5daaa7cb7aa34d, type: 3}
   m_PrefabInstance: {fileID: 28636907}
   m_PrefabAsset: {fileID: 0}
+--- !u!81 &2046464507
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1046341749}
+  m_Enabled: 1
