@@ -6,17 +6,20 @@ using UnityEngine;
 public class RepetidorDeSons : MonoBehaviour
 {
 
-    [SerializeField] private AudioSource somFolhas;
-
+    private AudioSource somFolhas;
+    public void ParaSomFolhas(){
+        somFolhas.Stop();
+    }
     private void Start()
     {
-        
+        somFolhas = FindObjectOfType<AudioSource>();
+        somFolhas.Play();
     }
 
     void Update()
-
     {
-
-     
+        if (Time.timeScale == 0){
+            ParaSomFolhas();
+        }
     }
 }

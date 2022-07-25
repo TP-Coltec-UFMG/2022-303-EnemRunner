@@ -10,12 +10,9 @@ public class PosicaoDasColunas : MonoBehaviour
 
     void Awake()
     {
-
         colunaUmX = Screen.width * 16 / 100;
         colunaDoisX = Screen.width * 1 / 2;
         colunaTresX = Screen.width * 83 / 100;
-
-
     }
     void Start()
     {

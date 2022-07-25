@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2038795889104858018}
   - component: {fileID: 2038795889104858021}
   - component: {fileID: 1847678902157756766}
+  - component: {fileID: 473334991045025840}
   m_Layer: 5
   m_Name: TreeFab
   m_TagString: Untagged
@@ -61,7 +62,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 84cc797da7673e4238cbe802be0799c2, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -69,9 +70,9 @@ AudioSource:
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
-  DopplerLevel: 3.3
+  DopplerLevel: 0.6
   MinDistance: 1
-  MaxDistance: 2000
+  MaxDistance: 3000
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -235,3 +236,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &473334991045025840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2038795889104857182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 188bdae0052a67d508ee54d4205d4b75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

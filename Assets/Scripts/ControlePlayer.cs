@@ -34,6 +34,8 @@ public class ControlePlayer : MonoBehaviour
     private Transform _transform;
 
     private ManagerDeSons soundManager;
+
+    
     
     #endregion
     
@@ -118,6 +120,7 @@ public class ControlePlayer : MonoBehaviour
         soundManager.ParaMusicaBackground();
         JogarDeNovoMenu.gameObject.SetActive(true);
         JogarDeNovoMenu.CarregaTelaGameOver();
+        
     }
 
     private void DesativaMenuDerrota()
@@ -131,6 +134,7 @@ public class ControlePlayer : MonoBehaviour
         Colunas = FindObjectOfType<PosicaoDasColunas>();
         soundManager = FindObjectOfType<ManagerDeSons>();
         _transform = GetComponent<Transform>();
+        
     }
 
     private void DefineColunaInicial()
