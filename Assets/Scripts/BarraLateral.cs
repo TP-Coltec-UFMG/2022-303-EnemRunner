@@ -15,7 +15,7 @@ public class BarraLateral : MonoBehaviour
 
     void Start()
     {
-        IncrementProgress(1f);
+        IncrementProgress(0.2f);
     }
 
     
