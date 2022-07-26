@@ -6,16 +6,19 @@ public class BarraLateral : MonoBehaviour
 {
     private Slider barraLateral;
     [SerializeField]
+    private ParticleSystem sistemaDeParticulas;
+    [SerializeField]
     private float FillSpeed = 0.1f;
     private float progressoAlvo = 0;
     private void Awake() {
         barraLateral = gameObject.GetComponent<Slider>();
-
+        
     }
 
     void Start()
     {
-        IncrementProgress(0.2f);
+        IncrementProgress(1f);
+        sistemaDeParticulas.Play();
     }
 
     
@@ -24,7 +27,13 @@ public class BarraLateral : MonoBehaviour
         if (barraLateral.value < progressoAlvo)
         {
             barraLateral.value += FillSpeed * Time.deltaTime;
+            if (!sistemaDeParticulas.isPlaying)
+                sistemaDeParticulas.Play();
         }   
+        else
+        {
+            //sistemaDeParticulas.Stop();
+        }
     }
 
     public void IncrementProgress(float newProgress)
