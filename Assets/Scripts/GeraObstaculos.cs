@@ -71,17 +71,8 @@ public class GeraObstaculos : MonoBehaviour
     }
     private void GeraObjetoAtual()
     {
-        if (colunaRandom == colunaDoisX){
-            GameObject instanciaDoObjetoAtual = Instantiate(ObjetoAlvo, new Vector3(colunaDoisX, Screen.height + 800, 0), Quaternion.identity, TransformDoPai);
-            Destroy(instanciaDoObjetoAtual, 3.5f);
-            instanciaDoObjetoAtual = Instantiate(ObjetoAlvo, new Vector3(colunaUmX, Screen.height + 800, 0), Quaternion.identity, TransformDoPai);
-            Destroy(instanciaDoObjetoAtual, 3.5f);
-            }
-        else {
-            GameObject instanciaDoObjetoAtual = Instantiate(ObjetoAlvo, new Vector3(colunaRandom, Screen.height + 800, 0), Quaternion.identity, TransformDoPai);
-            Destroy(instanciaDoObjetoAtual, 3.5f);
-        }
-        
+        GameObject instanciaDoObjetoAtual = Instantiate(ObjetoAlvo, new Vector3(colunaRandom, Screen.height + 200, 0), Quaternion.identity, TransformDoPai);
+        Destroy(instanciaDoObjetoAtual, 2f);
     }
 
     private bool CooldownAcabou()
