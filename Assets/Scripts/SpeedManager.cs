@@ -5,11 +5,10 @@ using UnityEngine;
 
 public class SpeedManager : MonoBehaviour
 {
-
+    
     [SerializeField]
     private float globalSpeed = 0.6f;
 
-    [SerializeField]
     public static float GlobalSpeed;
     [SerializeField]
     private Material rua;
@@ -17,9 +16,12 @@ public class SpeedManager : MonoBehaviour
     [SerializeField]
     private AnimationCurve speedCurve;
 
+    private float timer;
+
     private void DefineVelocidadeGeralBaseadoNoGrafico()
     {
-        globalSpeed = speedCurve.Evaluate(Time.time);
+        timer += Time.deltaTime;
+        globalSpeed = speedCurve.Evaluate(timer);
     }
 
     private void DefineVelocidadeGeral()
@@ -34,11 +36,11 @@ public class SpeedManager : MonoBehaviour
 
     private void Start()
     {
-        
     }
 
     void Update()
     {
+        
         DefineVelocidadeGeralBaseadoNoGrafico();
         DefineVelocidadeGeral();
         AjustaVelocidadeDoShaderRua();

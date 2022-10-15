@@ -9,6 +9,7 @@ public class JogarDeNovo_OuMenu : MonoBehaviour
     private GameObject gameOverGameObject;
     private ControlePlayer jogador;
 
+
     public void CarregaMenuInicial()
     {
         SceneManager.LoadScene(0);
