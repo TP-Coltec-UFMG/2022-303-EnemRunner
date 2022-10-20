@@ -219,8 +219,8 @@ RectTransform:
   - {fileID: 428031007}
   - {fileID: 2046464500}
   - {fileID: 497636275}
-  - {fileID: 1758110981}
   - {fileID: 1580475107}
+  - {fileID: 1758110981}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -883,7 +883,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 3cf4dc61ea972189391906048168aa74, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.15
+  m_Volume: 0.1
   m_Pitch: 0.5
   Loop: 0
   Mute: 0
@@ -1221,11 +1221,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 15450616}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -4, y: -1338}
+  m_AnchoredPosition: {x: 3, y: -1338}
   m_SizeDelta: {x: 1080, y: 2990}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1580475108
@@ -1288,8 +1288,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 70
+  m_fontSizeBase: 70
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1381,12 +1381,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 15450616}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0025177, y: -0.00086975}
-  m_SizeDelta: {x: 1080, y: 1440.7}
+  m_AnchoredPosition: {x: -0.0025177, y: 0.0073395}
+  m_SizeDelta: {x: 1080, y: 2337.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1758110982
 MonoBehaviour:
