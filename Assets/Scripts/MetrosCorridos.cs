@@ -15,6 +15,7 @@ public class MetrosCorridos : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-        Text.text = "Metros Corridos: " + timer.ToString("f2");
+        timer = timer += SpeedManager.GlobalSpeed/100000 ;
+        Text.text = "Distância Percorrida: " + timer.ToString("f2") + " metros";
     }
 }

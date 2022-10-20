@@ -72,7 +72,7 @@ public class GeraObstaculos : MonoBehaviour
     private void GeraObjetoAtual()
     {
         GameObject instanciaDoObjetoAtual = Instantiate(ObjetoAlvo, new Vector3(colunaRandom, Screen.height + 200, 0), Quaternion.identity, TransformDoPai);
-        Destroy(instanciaDoObjetoAtual, 2f);
+        Destroy(instanciaDoObjetoAtual, 3f);
     }
 
     private bool CooldownAcabou()
